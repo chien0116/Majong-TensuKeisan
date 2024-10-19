@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/main_menu_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:padding="16dp"
+        android:text="点数入力"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="130dp"
+            android:stretchColumns="*"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1翻"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2翻"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3翻"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4翻"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/ot700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="400/\n700"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/ot1300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="700/\n1300"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/ot2600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1300/\n2600"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or4800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="800/\n1600"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or9600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1600/\n3200"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or1500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="300/\n500"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or2900"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="500/\n1000"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or5800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1000/\n2000"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or11600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="2000/\n3900"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or2000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="400/\n700"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or3900"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="700/\n1300"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or7700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1300/\n2600"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or2400_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="400/\n800"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or4800_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="800/\n1600"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or9600_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1600/\n3200"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or2900_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="500/\n1000"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or5800_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1000/\n2000"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or11600_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="2000/\n3900"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="70符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or3400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="600/\n1200"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or6800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1200/\n2300"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or3900_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="700/\n1300"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or7700_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1300/\n2600"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="90符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or4400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="800/\n1500"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or8700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1500/\n2900"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or4800_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="800/\n1600"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/or9600_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1600/\n3200"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="110符"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/kt900"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="900/\n1800"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/kt1800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="1800/\n3600"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="--"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/mangan"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:tag="2000/\n4000"
+        android:text="満貫"
+        android:textStyle="bold"
+        app:backgroundTint="#4F65E1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline29" />
+
+    <Button
+        android:id="@+id/hanemann"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:tag="3000/\n6000"
+        android:text="跳満"
+        android:textStyle="bold"
+        app:backgroundTint="#409844"
+        app:layout_constraintBottom_toTopOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/mangan"
+        app:layout_constraintTop_toTopOf="@+id/guideline29" />
+
+    <Button
+        android:id="@+id/baimann"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:tag="4000/\n8000"
+        android:text="倍満"
+        android:textStyle="bold"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toTopOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/hanemann"
+        app:layout_constraintTop_toTopOf="@+id/guideline29" />
+
+    <Button
+        android:id="@+id/sannbaimann"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:tag="6000/\n12000"
+        android:text="三倍満"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/baimann"
+        app:layout_constraintTop_toTopOf="@+id/guideline29" />
+
+    <Button
+        android:id="@+id/yakumann"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:tag="8000/\n16000"
+        android:text="役満"
+        android:textStyle="bold"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/sannbaimann"
+        app:layout_constraintTop_toTopOf="@+id/guideline29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="99dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/main_menu_textview"
+        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="@+id/guideline31" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="確定"
+        app:layout_constraintBottom_toTopOf="@+id/yakumann"
+        app:layout_constraintEnd_toEndOf="@+id/main_menu_textview"
+        app:layout_constraintStart_toStartOf="@+id/guideline32" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

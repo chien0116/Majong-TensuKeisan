@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/main_menu_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:padding="16dp"
+        android:text="主選單"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/tw_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="104dp"
+        android:text="台灣麻將"
+        android:textSize="30sp"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="@+id/jp_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/jp_button"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu_textview"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/jp_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="100dp"
+        android:text="日本麻將"
+        android:textSize="30sp"
+        app:backgroundTint="#5C73EF"
+        app:layout_constraintEnd_toEndOf="@+id/guideline27"
+        app:layout_constraintStart_toStartOf="@+id/guideline27"
+        app:layout_constraintTop_toBottomOf="@+id/tw_button" />
+
+    <Button
+        android:id="@+id/seiseki"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="100dp"
+        android:text="對局紀錄"
+        android:textSize="30sp"
+        app:backgroundTint="#E6FFC107"
+        app:layout_constraintEnd_toEndOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/guideline27"
+        app:layout_constraintTop_toBottomOf="@+id/jp_button" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
